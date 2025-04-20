@@ -153,7 +153,7 @@ Here are some planned and potential features to take this project to the next le
 ## 👨‍💻 Author
 
 **Akshit Singh**  
-📧 [akshitsinghx@gmail.com](mailto:akshitsinghx@gmail.com)  
+📧 [akshitsingh0319@gmail.com](mailto:akshitsingh0319@gmail.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/akshit-singh-aba4b51a6) | 💡 Passionate about Tech, Psychology & Innovation  
 
 ---
