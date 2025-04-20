@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Report a Bug</title></head>
+<body>
+    <h2>Report a Bug</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.title.label }} {{ form.title() }}<br>
+        {{ form.description.label }} {{ form.description() }}<br>
+        {{ form.priority.label }} {{ form.priority() }}<br>
+        {{ form.submit() }}
+    </form>
+</body>
+</html>

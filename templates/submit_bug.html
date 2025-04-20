@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Bug</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Submit a Bug</h1>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <ul>
+          {% for category, message in messages %}
+            <li class="{{ category }}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.title.label }}<br>
+            {{ form.title(size=50) }}
+        </div>
+        <div>
+            {{ form.description.label }}<br>
+            {{ form.description(rows=4, cols=50) }}
+        </div>
+        <div>
+            {{ form.severity.label }}<br>
+            {{ form.severity() }}
+        </div>
+        <div>
+            {{ form.status.label }}<br>
+            {{ form.status() }}
+        </div>
+        <div>
+            {{ form.steps.label }}<br>
+            {{ form.steps(rows=3, cols=50) }}
+        </div>
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
+
+    <br>
+    <a href="{{ url_for('main.bug_list') }}">View All Bugs</a>
+</body>
+</html>

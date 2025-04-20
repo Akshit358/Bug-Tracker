@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Bug History</title></head>
+<body>
+    <h2>Bug History</h2>
+    <ul>
+        {% for bug in bugs %}
+            <li><strong>{{ bug.title }}</strong> - {{ bug.priority }} - {{ bug.status }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

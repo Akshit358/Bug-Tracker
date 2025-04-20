@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head><title>Test Form</title></head>
+<body>
+    <h2>Enter Your Name</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.name.label }} {{ form.name() }}<br>
+        {{ form.submit() }}
+    </form>
+</body>
+</html>
